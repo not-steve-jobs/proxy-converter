@@ -1,0 +1,19 @@
+{
+  "extends": "./tsconfig.base.json",
+  "compilerOptions": {
+    "baseUrl": "./",
+    "paths": {
+      "@schemas": [
+        "src/schemas"
+      ],
+      "@schemas/*": [
+        "src/schemas/*"
+      ],
+      "@common": ["src/common"],
+      "@common/*": ["src/common/*"],
+      "@guards": ["src/guards"],
+      "@guards/*": ["src/guards /*"],
+      "lib": ["es2018", "dom"],  // Include 'dom' here
+    }
+  }
+}
